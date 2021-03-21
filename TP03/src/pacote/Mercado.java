@@ -1,15 +1,33 @@
 package pacote;
 
 public abstract class Mercado {
-	protected String nome;
-	public Mercado(String n) {
-		nome = n;
+	protected int numItens = 0;
+	protected double valorTotal;
+	protected Itens itens;
+	
+	public Mercado(Itens a, int num, double tot) {
+		
 	}
-	public String getNome() {
-		return nome;
+	
+	public void setItens(Itens itens) {
+		this.itens = itens;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	
+	public int getNumItens() {
+		return numItens;
 	}
+	
+	public void setNumItens(int numItens) {
+		this.numItens = numItens;
+	}
+	
+	public double getValorTotal() {
+		return valorTotal;
+	}
+	
+	public void setValorTotal(double valorTotal) {
+		this.valorTotal = valorTotal;
+	}
+	
 
 }
