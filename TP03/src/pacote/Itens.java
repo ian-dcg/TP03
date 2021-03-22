@@ -27,7 +27,7 @@ public class Itens {
 	}
 	
 	public String toString() {
-		return "Nome do Item: " + nomeProduto + ", Setor: " + setor + quantidade;
+		return "Item: " + nomeProduto + " - R$: " + preco + ". (Setor: " + setor + "), " + quantidade;
 	}
 
 	public String getNomeProduto() {

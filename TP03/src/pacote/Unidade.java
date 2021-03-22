@@ -10,7 +10,7 @@ public class Unidade {
 	}
 	
 	public String toString() {
-		return ". Quantidade: " + quantidade + ", " + tipoUnidade + ". ";
+		return quantidade + " - " + tipoUnidade + ". ";
 	}
 
 	public String getTipoUnidade() {

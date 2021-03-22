@@ -11,6 +11,7 @@ public class Teste {
 		
 		s = new Setor ("Drogaria", 1);
 		u = new Unidade ("qtd", 1);
+		l = new Lista ("Lista Teste");
 		
 		
 		aux = new Itens("remédio", u, 1.58, s, true, true);

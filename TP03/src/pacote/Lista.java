@@ -6,9 +6,8 @@ public class Lista  extends Mercado {
 	
 	
 	//Sobrecarga
-	public Lista (int num, double tot) {
-		numItens = num;
-		valorTotal = tot;
+	public Lista (String nome) {
+		nomeLista = nome;
 	}
 	
 	public Lista (String nome, int num, double tot) {
@@ -18,7 +17,7 @@ public class Lista  extends Mercado {
 	}
 	
 	public String toString() {
-		return "Nome da Lista: " + nomeLista + ", total de itens na lista: " + numItens + ", Valor total da lista: " + valorTotal;
+		return "Nome da Lista: " + nomeLista + ", numero de itens: " + numItens + ", valor: " + valorTotal;
 	}
 	
 	public Itens[] getItens() {
@@ -57,7 +56,7 @@ public class Lista  extends Mercado {
 		String registro = "Lista de Itens Registrados; \n";
 		for (int i = 0; i < numItens; i++) {
 			System.out.println(i);
-			registro = registro + "\n" + itensRegistrados[i].getItens().toString();
+			registro = registro + "\n" + itensRegistrados[i].toString();
 		}
 		return registro;
 	}

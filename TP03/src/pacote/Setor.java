@@ -27,7 +27,7 @@ public class Setor {
 	}
 	
 	public String toString() {
-		return ". Setor: " + categoria + ", Prioridade: " + prioridade; 
+		return categoria + "/" + prioridade; 
 	}
 
 }
