@@ -5,10 +5,6 @@ public abstract class Mercado {
 	protected double valorTotal;
 	protected Itens itens;
 	
-	public Mercado(Itens a, int num, double tot) {
-		
-	}
-	
 	public void setItens(Itens itens) {
 		this.itens = itens;
 	}

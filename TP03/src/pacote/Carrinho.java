@@ -3,6 +3,20 @@ package pacote;
 public class Carrinho extends Mercado{
 	private boolean check;
 	
+	public Carrinho (int num, double tot, boolean ck) {
+		numItens = num;
+		valorTotal = tot;
+		check = ck;
+	}
+	
+	public boolean getCheck() {
+		return check;
+	}
+	
+	public void setcheck(boolean ck) {
+		this.check = ck;
+	}
+	
 	public void setItens(Itens itens) {
 		this.itens = itens;
 	}
@@ -26,7 +40,9 @@ public class Carrinho extends Mercado{
 	
 	
 	public String toString() {
-		return "Valor total do Carrinho: " + valorTotal;
+		String saida = "Valor total do Carrinho: \" + valorTotal";
+		return saida;
+		
 	}
 
 }

@@ -7,7 +7,6 @@ public class Lista  extends Mercado {
 	
 	//Sobrecarga
 	public Lista (int num, double tot) {
-		nomeLista = nome;
 		numItens = num;
 		valorTotal = tot;
 	}
@@ -34,8 +33,8 @@ public class Lista  extends Mercado {
 		return nomeLista;
 	}
 	
-	public void setNomeLista(String nomeLista) {
-		this.nomeLista = nomeLista;
+	public void setNomeLista(String nome) {
+		this.nomeLista = nome;
 	}
 	
 	public int getNumItens() {
@@ -44,14 +43,6 @@ public class Lista  extends Mercado {
 	
 	public void setNumItens(int numItens) {
 		this.numItens = numItens;
-	}
-	
-	public Unidade getQuantidade(int i) {
-		return itensRegistrados[i].getQuantidade();
-	}
-	
-	public void setQuantidade(Itens qtd, int i) {
-		this.itensRegistrados[i] = qtd;
 	}
 	
 	public double getValorTotal() {
