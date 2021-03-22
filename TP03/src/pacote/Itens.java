@@ -2,17 +2,31 @@ package pacote;
 
 public class Itens {
 	private String nomeProduto;
-	private Unidade quantidade;
 	private double preco;
-	private Setor setor;
 	private boolean checkCarrinho;
+	private boolean checkCancelado;
+	private Unidade quantidade;
+	private Setor setor;
 
-	public Itens(String p, Unidade qtd, double val, Setor s, boolean check) {
+	//Sobrecarga
+	public Itens(String p, Unidade qtd, double val, Setor s, boolean check, boolean cCancelado) {
 		nomeProduto = p;
 		quantidade = qtd;
 		preco = val;
 		setor = s;
 		checkCarrinho = check ;
+		checkCancelado = cCancelado;
+	}
+	
+	public Itens(String p, Unidade qtd, double val, Setor s) {
+		nomeProduto = p;
+		quantidade = qtd;
+		preco = val;
+		setor = s;
+	}
+	
+	public String toString() {
+		return "Item: " + nomeProduto + " - R$: " + preco + ". (Setor: " + setor + "), " + quantidade;
 	}
 
 	public String getNomeProduto() {
@@ -21,14 +35,6 @@ public class Itens {
 
 	public void setNomeProduto(String nomeProduto) {
 		this.nomeProduto = nomeProduto;
-	}
-
-	public Unidade getQuantidade() {
-		return quantidade;
-	}
-
-	public void setQuantidade(Unidade quantidade) {
-		this.quantidade = quantidade;
 	}
 
 	public double getPreco() {
@@ -46,13 +52,28 @@ public class Itens {
 	public void setSetor(Setor setor) {
 		this.setor = setor;
 	}
+	
+	public Unidade getUnidade() {
+		return quantidade;
+	}
 
-	public boolean isCheckCarrinho() {
+	public void setUnidade(Unidade quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public boolean getCheckCarrinho() {
 		return checkCarrinho;
 	}
 
 	public void setCheckCarrinho(boolean checkCarrinho) {
 		this.checkCarrinho = checkCarrinho;
 	}
+	
+	public boolean getCheckCancelado() {
+		return checkCancelado;
+	}
 
+	public void setCheckCancelado(boolean cCancelado) {
+		this.checkCancelado = cCancelado;
+	}
 }

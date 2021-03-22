@@ -1,28 +1,48 @@
 package pacote;
 
-public class Carrinho {
-	private Itens[] itensCarrinho;
-	private double valorCarrinho;
+public class Carrinho extends Mercado{
+	private boolean check;
 	
-	public Carrinho(Itens[] i, double total) {
-		itensCarrinho = i;
-		valorCarrinho = total;
+	public Carrinho (int num, double tot, boolean ck) {
+		numItens = num;
+		valorTotal = tot;
+		check = ck;
 	}
-
-	public Itens[] getItensCarrinho() {
-		return itensCarrinho;
+	
+	public boolean getCheck() {
+		return check;
 	}
-
-	public void setItensCarrinho(Itens[] itensCarrinho) {
-		this.itensCarrinho = itensCarrinho;
+	
+	public void setcheck(boolean ck) {
+		this.check = ck;
 	}
-
-	public double getValorCarrinho() {
-		return valorCarrinho;
+	
+	public void setItens(Itens itens) {
+		this.itens = itens;
 	}
-
-	public void setValorCarrinho(double valorCarrinho) {
-		this.valorCarrinho = valorCarrinho;
+	
+	public int getNumItens() {
+		return numItens;
+	}
+	
+	public void setNumItens(int numItens) {
+		this.numItens = numItens;
+	}
+	
+	public double getValorTotal() {
+		return valorTotal;
+	}
+	
+	public void setValorTotal(double valorTotal) {
+		this.valorTotal = valorTotal;
+	}
+	
+	
+	
+	public String toString() {
+		String saida = "Valor total do Carrinho: " + valorTotal;
+		return saida;
+		
 	}
 
 }

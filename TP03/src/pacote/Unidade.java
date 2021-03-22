@@ -8,6 +8,10 @@ public class Unidade {
 		tipoUnidade = u;
 		quantidade = qtd;
 	}
+	
+	public String toString() {
+		return quantidade + " - " + tipoUnidade + ". ";
+	}
 
 	public String getTipoUnidade() {
 		return tipoUnidade;
