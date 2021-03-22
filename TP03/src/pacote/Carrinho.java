@@ -40,7 +40,7 @@ public class Carrinho extends Mercado{
 	
 	
 	public String toString() {
-		String saida = "Valor total do Carrinho: \" + valorTotal";
+		String saida = "Valor total do Carrinho: " + valorTotal;
 		return saida;
 		
 	}

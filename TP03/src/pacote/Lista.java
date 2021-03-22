@@ -17,7 +17,7 @@ public class Lista  extends Mercado {
 	}
 	
 	public String toString() {
-		return "Nome da Lista: " + nomeLista + ", numero de itens: " + numItens + ", valor: " + valorTotal;
+		return "Nome da Lista: " + nomeLista;
 	}
 	
 	public Itens[] getItens() {
@@ -36,6 +36,7 @@ public class Lista  extends Mercado {
 		this.nomeLista = nome;
 	}
 	
+	@Override
 	public int getNumItens() {
 		return numItens;
 	}
@@ -58,6 +59,7 @@ public class Lista  extends Mercado {
 			System.out.println(i);
 			registro = registro + "\n" + itensRegistrados[i].toString();
 		}
+		
 		return registro;
 	}
 
